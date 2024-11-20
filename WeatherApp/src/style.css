@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #885df1;
+  color: #d72891;
 }
 
 .weather-app {
@@ -34,7 +34,7 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #885df1;
+  background-color: #d72891;
   color: white;
   border: none;
   padding: 20px;
