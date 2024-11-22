@@ -11,6 +11,8 @@ function search(event) {
   axios
     .get(apiUrl)
     .then((response) => {
+      console.log(response);
+
       let temperature = response.data.temperature.current;
       let temperatureElement = document.querySelector(
         ".current-temperature-value"
@@ -21,6 +23,9 @@ function search(event) {
       let temperatureUnitElement = document.querySelector(
         ".current-temperature-unit"
       );
+      let iconDisplay = document.querySelector("#current-temperature-icon");
+      let icon = `<img src="${response.data.condition.icon_url}" />`;
+      iconDisplay.innerHTML = icon;
       let descriptionDisplay = document.querySelector("#description");
       let description = response.data.condition.description;
       descriptionDisplay.innerHTML = description;
