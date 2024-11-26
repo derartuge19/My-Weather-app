@@ -1,5 +1,5 @@
 body {
-  background: #f9f7fe;
+  background: #f6f4f4;
   font-family: "Roboto", sans-serif;
 }
 
@@ -86,6 +86,33 @@ main {
   font-size: 28px;
   position: relative;
   top: -38px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.day {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 14px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+.icon img {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 15px;
+}
+.temp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #f65282;
+  font-weight: bold;
 }
 
 footer {
